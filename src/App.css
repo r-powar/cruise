@@ -1,0 +1,50 @@
+.App {
+  width: 90%;
+  margin: auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color:#00A0C6;
+
+}
+
+.listBox{
+  border: 1px solid black;
+  padding: 10px;
+
+}
+
+.pin{
+  font-size: 15px;
+  margin-right: 20px;
+  cursor: pointer;
+}
