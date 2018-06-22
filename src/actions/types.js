@@ -3,3 +3,4 @@
  */
 export const FETCH_POST = 'FETCH_POST';
 export const PIN_POST = 'PIN_POST';
+export const UNPIN_POST = 'UNPIN_POST';
