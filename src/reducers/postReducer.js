@@ -9,28 +9,26 @@ const initialState = {
     pinnedPosts:util.loadPinnedPosts()
 };
 
+//Reducer to handle Pinned Posts
 const pinned = (state = util.loadPinnedPosts(), action) => {
     switch(action.type){
         case PIN_POST:
             let pinned = state;
-            console.log("Pinned:", pinned);
             return pinned;
         case UNPIN_POST:
-            console.log("Unpinned:", state);
             return state;
         default:
-            console.log("Default Pinned:", state);
             return state;
     }
 };
 
+//Reducer to handle Posts
 const items = (state, action) => {
     switch(action.type){
         case FETCH_POST:
             util.removeDuplicates(state.pinned, action.payload);
             return Object.assign({}, state.items, {items: action.payload});
         default:
-            console.log("Default Fetch:", state.items);
             return state.items;
     }
 };
